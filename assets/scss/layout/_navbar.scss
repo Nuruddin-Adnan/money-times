@@ -6,8 +6,12 @@
         a {
             color: #8ea8c0;
             font-size: 12px;
-            margin: 0 5px;
+            margin: 0 10px;
             transition: all 0.2s;
+
+            @media (max-width:767px) {
+                margin: 0 5px;
+            }
 
             &:hover {
                 color: #ffffff;
@@ -30,10 +34,11 @@
         text-align: center;
         border: none;
         text-transform: uppercase;
-        margin: 0 5px;
+        margin: 0 10px;
 
         @media(max-width:767px) {
             font-size: 10px;
+            margin: 0 5px;
         }
 
         &:hover {
@@ -47,6 +52,13 @@
 
     @media(max-width:991px) {
         overflow-x: scroll;
+
+        // scroll bar design
+        /* width */
+        &::-webkit-scrollbar {
+            height: 0px;
+            width: 10px;
+        }
     }
 
     .link-wrapper {

@@ -229,47 +229,6 @@ hr {
 }
 
 /*===// end of components css === */
-.pagin-wrapper {
-  padding: 20px 0;
-  margin: auto;
-}
-@media (min-width: 1200px) {
-  .pagin-wrapper {
-    max-width: 80%;
-  }
-}
-.pagin-wrapper .nav-btn {
-  border: none;
-  background: none;
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  color: #333333;
-}
-.pagin-wrapper .page-nums {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 30px;
-}
-@media (min-width: 1200px) {
-  .pagin-wrapper .page-nums {
-    padding: 0 50px;
-  }
-}
-.pagin-wrapper .page-nums .page-num {
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  color: #333333;
-}
-.pagin-wrapper .page-nums .page-num.active {
-  color: #099939;
-}
-.pagin-wrapper .page-nums .page-num:hover {
-  color: #099939;
-}
-
 /*=== layout css start === */
 .top-navigation {
   background: url(../images/h-bg.png) no-repeat center center/cover;
@@ -278,8 +237,13 @@ hr {
 .top-navigation .date-link a {
   color: #8ea8c0;
   font-size: 12px;
-  margin: 0 5px;
+  margin: 0 10px;
   transition: all 0.2s;
+}
+@media (max-width: 767px) {
+  .top-navigation .date-link a {
+    margin: 0 5px;
+  }
 }
 .top-navigation .date-link a:hover {
   color: #ffffff;
@@ -299,11 +263,12 @@ hr {
   text-align: center;
   border: none;
   text-transform: uppercase;
-  margin: 0 5px;
+  margin: 0 10px;
 }
 @media (max-width: 767px) {
   .top-navigation button {
     font-size: 10px;
+    margin: 0 5px;
   }
 }
 .top-navigation button:hover {
@@ -316,6 +281,11 @@ hr {
 @media (max-width: 991px) {
   .bottom-navigation {
     overflow-x: scroll;
+    /* width */
+  }
+  .bottom-navigation::-webkit-scrollbar {
+    height: 0px;
+    width: 10px;
   }
 }
 @media (max-width: 991px) {
@@ -398,4 +368,49 @@ hr {
 
 /*===// end of layout css === */
 /*=== pages start === */
-/*===// end of pages  === *//*# sourceMappingURL=style.css.map */
+.pagin-wrapper {
+  padding: 20px 0;
+  margin: auto;
+}
+@media (min-width: 1200px) {
+  .pagin-wrapper {
+    max-width: 80%;
+  }
+}
+.pagin-wrapper .nav-btn {
+  border: none;
+  background: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #333333;
+}
+.pagin-wrapper .page-nums {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+@media (min-width: 1200px) {
+  .pagin-wrapper .page-nums {
+    padding: 0 50px;
+  }
+}
+.pagin-wrapper .page-nums .page-num {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #333333;
+}
+.pagin-wrapper .page-nums .page-num.active {
+  color: #099939;
+}
+.pagin-wrapper .page-nums .page-num:hover {
+  color: #099939;
+}
+
+@media (max-width: 767px) {
+  .section-page .latest-news .news-item .heading-medium-v2 {
+    font-size: 16px;
+  }
+}
