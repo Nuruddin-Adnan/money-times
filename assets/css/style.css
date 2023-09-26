@@ -56,7 +56,7 @@ a:hover {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1320px;
+    max-width: 1160px;
   }
 }
 /*=== abstracts css start === */
@@ -74,7 +74,7 @@ body {
 .category-title {
   font-family: "helvetica-regular";
   color: #316ca6;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .line-clamp-2 {
@@ -107,21 +107,21 @@ body {
   font-family: "PT Serif", serif;
   color: #152a45;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .heading-medium {
   font-family: "helvetica-regular";
   color: #152a45;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .heading-medium-v2 {
   font-family: "PT Serif", serif;
   color: #152a45;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .heading-semibig {
@@ -153,7 +153,7 @@ body {
 }
 
 .text-small-ash {
-  font-size: 14px;
+  font-size: 13px;
   color: #888888;
 }
 
@@ -249,7 +249,7 @@ hr {
   color: #ffffff;
 }
 .top-navigation .navbar-brand {
-  max-width: 400px;
+  max-width: 340px;
 }
 @media (max-width: 767px) {
   .top-navigation .navbar-brand {
@@ -295,10 +295,11 @@ hr {
 }
 .bottom-navigation .nav-link {
   text-transform: uppercase;
-  color: #333333;
+  color: #010133;
   margin: 0 30px;
   font-family: "helvetica-bold";
   padding-bottom: 5px;
+  padding-inline: 15px;
   border-bottom: 2px solid rgba(0, 0, 0, 0);
 }
 .bottom-navigation .nav-link.active {
@@ -307,6 +308,11 @@ hr {
 }
 .bottom-navigation .nav-link:hover {
   color: #274299;
+}
+@media (min-width: 1200px) {
+  .bottom-navigation .nav-link {
+    display: inline-block;
+  }
 }
 @media (max-width: 1199px) {
   .bottom-navigation .nav-link {
