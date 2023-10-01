@@ -152,6 +152,13 @@ body {
   font-size: 35px;
 }
 
+.heading-22 {
+  font-family: "helvetica-bold";
+  font-size: 22px;
+  line-height: 30px;
+  color: #333333;
+}
+
 .text-small-ash {
   font-size: 13px;
   color: #888888;
@@ -181,13 +188,13 @@ body {
   position: absolute;
   color: #ffffff;
   padding: 0px 5px;
-  bottom: -5px;
-  left: 15px;
+  bottom: 0px;
+  left: 0px;
 }
 
 .chr {
   background: #152a45;
-  height: 3px;
+  height: 2px;
 }
 
 hr {
@@ -197,7 +204,17 @@ hr {
 
 @media (min-width: 1200px) {
   .bor-right {
-    border-right: 2px solid #eee;
+    border-right: 1px solid #ebebeb;
+  }
+}
+
+.bor-right-a {
+  border-right: 1px solid #ebebeb;
+}
+
+@media (min-width: 1200px) {
+  .custom-gutter {
+    --bs-gutter-x: 32px ;
   }
 }
 
@@ -232,7 +249,7 @@ hr {
 /*=== layout css start === */
 .top-navigation {
   background: url(../images/h-bg.png) no-repeat center center/cover;
-  padding: 10px 0 20px;
+  padding: 10px 0 16px;
 }
 .top-navigation .date-link a {
   color: #8ea8c0;
@@ -248,6 +265,10 @@ hr {
 .top-navigation .date-link a:hover {
   color: #ffffff;
 }
+.top-navigation .date-link .f-icon {
+  font-size: 14px;
+  color: #ffffff;
+}
 .top-navigation .navbar-brand {
   max-width: 340px;
 }
@@ -257,6 +278,7 @@ hr {
   }
 }
 .top-navigation button {
+  font-weight: bold;
   font-size: 12px;
   color: #ffffff;
   background: none;
@@ -277,15 +299,11 @@ hr {
 
 .bottom-navigation {
   padding-top: 10px;
+  border-bottom: 2px solid #dfe4e8;
 }
 @media (max-width: 991px) {
   .bottom-navigation {
-    overflow-x: scroll;
-    /* width */
-  }
-  .bottom-navigation::-webkit-scrollbar {
-    height: 0px;
-    width: 10px;
+    display: none;
   }
 }
 @media (max-width: 991px) {
@@ -294,13 +312,15 @@ hr {
   }
 }
 .bottom-navigation .nav-link {
-  text-transform: uppercase;
-  color: #010133;
-  margin: 0 30px;
-  font-family: "helvetica-bold";
-  padding-bottom: 5px;
-  padding-inline: 15px;
   border-bottom: 2px solid rgba(0, 0, 0, 0);
+  font-family: "helvetica-regular";
+  text-transform: uppercase;
+  padding-inline: 15px;
+  padding-bottom: 5px;
+  white-space: nowrap;
+  color: #010133;
+  font-size: 16px;
+  margin: 0 30px;
 }
 .bottom-navigation .nav-link.active {
   color: #082585;
@@ -316,8 +336,39 @@ hr {
 }
 @media (max-width: 1199px) {
   .bottom-navigation .nav-link {
+    font-size: 14px;
     margin: 0 20px;
   }
+}
+@media (max-width: 991px) {
+  .bottom-navigation .nav-link {
+    margin: 0 15px;
+  }
+}
+
+.side-nav .navbar-brand {
+  max-width: 200px;
+}
+.side-nav .main-nav .nav-link {
+  font-family: "Inter", sans-serif;
+  color: #333;
+  padding: 0.5rem 0px;
+  font-weight: 600;
+}
+@media (max-width: 1399px) {
+  .side-nav .main-nav .nav-link {
+    font-size: 14px;
+  }
+}
+.side-nav .main-nav .nav-link.active, .side-nav .main-nav .nav-link:hover {
+  color: #b90000;
+}
+.side-nav .copyright {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #555;
 }
 
 .footer {
@@ -403,20 +454,48 @@ hr {
   }
 }
 .pagin-wrapper .page-nums .page-num {
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
+  border-bottom: 4px solid rgba(201, 209, 217, 0);
+  font-family: "helvetica-bold";
+  font-size: 13px;
+  padding: 0 5px;
   color: #333333;
 }
 .pagin-wrapper .page-nums .page-num.active {
-  color: #099939;
+  border-bottom: 4px solid #c9d1d9;
 }
 .pagin-wrapper .page-nums .page-num:hover {
-  color: #099939;
+  border-bottom: 4px solid #c9d1d9;
+}
+
+@media (min-width: 992px) {
+  .content-wrapper {
+    display: flex;
+  }
+  .content-wrapper .left-content {
+    width: calc(100% - 305px);
+    padding-right: 16px;
+    margin-right: 16px;
+    border-right: 1px solid #f1f1f1;
+  }
+  .content-wrapper .sidebar {
+    width: 305px;
+  }
+}
+
+.fou-border .news-link {
+  height: 250px;
+}
+.fou-border .news-link.auto {
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 25px;
+}
+.fou-border .news-link.b-bottom {
+  border-bottom: 1px solid #f1f1f1;
 }
 
 @media (max-width: 767px) {
   .section-page .latest-news .news-item .heading-medium-v2 {
     font-size: 16px;
   }
-}
+}/*# sourceMappingURL=style.css.map */

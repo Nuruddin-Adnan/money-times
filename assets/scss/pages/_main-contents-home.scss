@@ -26,18 +26,51 @@
         }
 
         .page-num {
-            font-family: 'Inter', sans-serif;
-            font-weight: 600;
-            font-size: 16px;
+            border-bottom: 4px solid #c9d1d900;
+            font-family: "helvetica-bold";
+            font-size: 13px;
+            padding: 0 5px;
             color: #333333;
 
             &.active {
-                color: #099939;
+                border-bottom: 4px solid #c9d1d9;
             }
 
             &:hover {
-                color: #099939;
+                border-bottom: 4px solid #c9d1d9;
             }
+        }
+    }
+}
+
+.content-wrapper {
+    @media(min-width: 992px) {
+        display: flex;
+
+        .left-content {
+            width: calc(100% - 305px);
+            padding-right: 16px;
+            margin-right: 16px;
+            border-right: 1px solid #f1f1f1;
+        }
+
+        .sidebar {
+            width: 305px;
+        }
+    }
+}
+
+.fou-border {
+    .news-link {
+        height: 250px;
+
+        &.auto {
+            height: fit-content;
+            padding-bottom: 25px;
+        }
+
+        &.b-bottom {
+            border-bottom: 1px solid #f1f1f1;
         }
     }
 }

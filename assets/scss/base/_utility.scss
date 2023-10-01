@@ -1,5 +1,15 @@
 .bor-right {
     @media (min-width:1200px) {
-        border-right: 2px solid #eee;
+        border-right: 1px solid #ebebeb;
+    }
+}
+
+.bor-right-a {
+    border-right: 1px solid #ebebeb;
+}
+
+.custom-gutter {
+    @media(min-width: 1200px) {
+        --bs-gutter-x: 32px
     }
 }
